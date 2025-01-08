@@ -1,0 +1,57 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "teachable/buy-button",
+  "title": "Teachable Buy Button",
+  "category": "embed",
+  "icon": "edit",
+  "description": "Allow customers to purchase your Teachable products from your website more easily.",
+  "keywords": [
+    "teachable buy button"
+  ],
+  "version": "1.0.0",
+  "textdomain": "teachable",
+  "providesContext": {
+    "teachableBuyButton/productId": "productId"
+  },
+  "example": {
+    "attributes": {
+      "productId": 0
+    }
+  },
+  "attributes": {
+    "productId": {
+      "type": "string",
+      "default": null
+    },
+    "hasError": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "supports": {
+    "color": {
+      "text": true,
+      "background": true,
+      "border": true
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true,
+      "fontStyle": true,
+      "fontWeight": true,
+      "textTransform": true,
+      "fontFamily": true
+    },
+    "dimensions": {
+      "aspectRatio": true,
+      "minHeight": true
+    },
+    "spacing": {
+      "margin": true,
+      "padding": true
+    },
+    "align": true
+  },
+  "editorScript": "file:./index.js"
+}

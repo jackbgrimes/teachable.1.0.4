@@ -1,0 +1,63 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "teachable/product-plan-options",
+  "title": "Product Plan Options",
+  "category": "embed",
+  "description": "A teachable product plan options block.",
+  "keywords": [
+    "teachable product plan options"
+  ],
+  "version": "1.0.0",
+  "textdomain": "teachable",
+  "usesContext": [
+    "teachableBuyButton/productId",
+    "teachableBuyButton/planIds"
+  ],
+  "ancestor": [
+    "teachable/buy-button"
+  ],
+  "example": {},
+  "attributes": {
+    "productId": {
+      "type": "string",
+      "default": null
+    },
+    "planIds": {
+      "type": "array",
+      "default": []
+    }
+  },
+  "supports": {
+    "color": {
+      "text": true,
+      "background": true,
+      "border": true
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true,
+      "fontStyle": true,
+      "fontWeight": true,
+      "textTransform": true,
+      "fontFamily": true
+    },
+    "dimensions": {
+      "aspectRatio": true,
+      "minHeight": true
+    },
+    "spacing": {
+      "margin": true,
+      "padding": true
+    },
+    "__experimentalBorder": {
+      "radius": true,
+      "color": true,
+      "style": true,
+      "width": true
+    },
+    "align": true
+  },
+  "editorScript": "file:./index.js",
+  "render": "file:./render.php"
+}
